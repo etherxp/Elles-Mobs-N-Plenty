@@ -1,10 +1,12 @@
 package net.findsnow.ellesmobsnplenty.item;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.findsnow.ellesmobsnplenty.EllesMobsNPlenty;
 import net.findsnow.ellesmobsnplenty.block.ModBlocks;
+import net.findsnow.ellesmobsnplenty.entity.ModBoats;
 import net.findsnow.ellesmobsnplenty.entity.ModEntities;
 import net.findsnow.ellesmobsnplenty.sound.ModSounds;
 import net.minecraft.item.*;
@@ -17,6 +19,10 @@ public class ModItems {
   // Items
   public static final Item FROSTITE = registerItem("frostite",
           new Item(new FabricItemSettings()));
+
+  public static final Item LUCI_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.LUCI_BOAT_ID, ModBoats.LUCI_BOAT_KEY, false);
+  public static final Item LUCI_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.LUCI_CHEST_BOAT_ID, ModBoats.LUCI_BOAT_KEY, true);
+
   public static final Item NEPHRITE = registerItem("nephrite",
           new Item(new FabricItemSettings()));
   public static final Item RAW_NEPHRITE = registerItem("raw_nephrite",
@@ -35,6 +41,10 @@ public class ModItems {
           new SpawnEggItem(ModEntities.CRAB, 0x831414, 0xf24b4b, new FabricItemSettings()));
   public static final Item TURTLE_SPAWN_EGG = registerItem("turtle_spawn_egg",
           new SpawnEggItem(ModEntities.TURTLE, 0x16372a, 0x418651, new FabricItemSettings()));
+  public static final Item BUTTERFLY_SPAWN_EGG = registerItem("butterfly_spawn_egg",
+          new SpawnEggItem(ModEntities.BUTTERFLY, 0x3b8827, 0x462f2f, new FabricItemSettings()));
+  public static final Item CATERPILLAR_SPAWN_EGG = registerItem("caterpillar_spawn_egg",
+          new SpawnEggItem(ModEntities.CATERPILLAR, 0x185d25, 0x65992e, new FabricItemSettings()));
 
 
   // Food

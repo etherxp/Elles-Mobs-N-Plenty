@@ -7,6 +7,7 @@ import net.findsnow.ellesmobsnplenty.block.custom.*;
 import net.findsnow.ellesmobsnplenty.block.hollow.HollowLuciLogBlock;
 import net.findsnow.ellesmobsnplenty.block.mushrooms.BlueMushroomLampBlock;
 import net.findsnow.ellesmobsnplenty.block.mushrooms.GreenMushroomLampBlock;
+import net.findsnow.ellesmobsnplenty.block.mushrooms.LuciMushroomBlock;
 import net.findsnow.ellesmobsnplenty.block.signs.ModHangingSignBlock;
 import net.findsnow.ellesmobsnplenty.block.signs.ModStandingSignBlock;
 import net.findsnow.ellesmobsnplenty.block.signs.ModWallHangingSignBlock;
@@ -47,6 +48,8 @@ public class ModBlocks {
   public static final Block ANCIENT_FURNACE = registerBlock("ancient_furnace",
           new AncientFurnaceBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)
                   .luminance(state -> state.get(AncientFurnaceBlock.LIT)? 13 : 0).mapColor(MapColor.EMERALD_GREEN)));
+  public static final Block CHRYSALIS_BLOCK = registerBlock("chrysalis_block",
+          new ChrysalisBlock(FabricBlockSettings.copy(Blocks.HONEY_BLOCK).sounds(BlockSoundGroup.HONEY)));
 
   // Foliage
   public static final Block LUCILLE_TULIP = registerBlock("lucille_tulip",
@@ -54,13 +57,25 @@ public class ModBlocks {
   public static final Block POTTED_LUCILLE_TULIP = registerBlockWithoutBlockItem("potted_lucille_tulip",
           new FlowerPotBlock(LUCILLE_TULIP, FabricBlockSettings.copy(Blocks.POTTED_WHITE_TULIP)));
 
+  public static final Block LUCI_LEAF_PILE = registerBlock("luci_leaf_pile",
+          new LuciLeafPileBlock(FabricBlockSettings.copy(Blocks.CHERRY_LEAVES)));
+  public static final Block CLOVER = registerBlock("clover_block",
+          new CloverBlock(FabricBlockSettings.copy(Blocks.CHERRY_LEAVES).noCollision()));
+  public static final Block TALL_CLOVER = registerBlock("tall_clover_block",
+          new CloverBlock(FabricBlockSettings.copy(Blocks.CHERRY_LEAVES).noCollision()));
+
   public static final Block FLAURELLE = registerBlock("flaurelle",
           new FlowerBlock(StatusEffects.SATURATION,4, FabricBlockSettings.copy(Blocks.WHITE_TULIP)));
   public static final Block POTTED_FLAURELLE = registerBlockWithoutBlockItem("potted_flaurelle",
           new FlowerPotBlock(LUCILLE_TULIP, FabricBlockSettings.copy(Blocks.POTTED_WHITE_TULIP)));
-
   public static final Block LUCI_PETAL = registerBlock("luci_petals",
   new LuciPetals(FabricBlockSettings.copy(Blocks.PINK_PETALS).nonOpaque().noCollision()));
+
+
+  // Mushrooms
+  public static final Block LUCI_MUSHROOM = registerBlock("luci_mushroom_block",
+          new LuciMushroomBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.FUNGUS).nonOpaque().pistonBehavior(PistonBehavior.DESTROY).noCollision()));
+
 
 
   // Wood Blocks
@@ -123,23 +138,6 @@ public class ModBlocks {
           new Block(FabricBlockSettings.copy(Blocks.STONE)));
   public static final Block DEEPSLATE_FROSTITE_ORE = registerBlock("deepslate_frostite_ore",
           new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE)));
-
-
-  /*
-  * UNUSED
-  *
-  *
-  *
-  *
-  *
-  *
-  *
-  *
-  *
-  *
-  *
-  * */
-
 
 
   // Helper Methods

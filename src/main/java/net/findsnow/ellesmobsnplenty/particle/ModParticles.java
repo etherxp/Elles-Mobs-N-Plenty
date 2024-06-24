@@ -12,13 +12,11 @@ public class ModParticles {
           registerParticle("falling_leaves_particle", FabricParticleTypes.simple());
   public static final DefaultParticleType BLOSSOMING_FALLING_LEAVES =
           registerParticle("blossoming_falling_leaves", FabricParticleTypes.simple());
+  public static final DefaultParticleType LUCI_MUSHROOM_PARTICLE =
+          registerParticle("luci_mushroom_particle", FabricParticleTypes.simple());
 
   public static final DefaultParticleType FIREFLY =
           registerParticle("firefly", FabricParticleTypes.simple());
-
-  public static void RegisterFirefly() {
-    registerParticle("firefly", FIREFLY);
-  }
 
   private static DefaultParticleType registerParticle(String name, DefaultParticleType particleType) {
     return Registry.register(Registries.PARTICLE_TYPE, new Identifier(EllesMobsNPlenty.MOD_ID, name), particleType);

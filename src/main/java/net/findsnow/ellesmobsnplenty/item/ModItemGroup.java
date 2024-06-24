@@ -46,6 +46,8 @@ public class ModItemGroup {
                     entries.add(ModBlocks.LUCILLE_TULIP);
                     entries.add(ModBlocks.FLAURELLE);
                     entries.add(ModBlocks.LUCI_FUNGUS_SHELF_BLOCk);
+                    entries.add(ModBlocks.LUCI_MUSHROOM);
+                    entries.add(ModBlocks.CHRYSALIS_BLOCK);
 
                     // Luci Wood
                     entries.add(ModBlocks.LUCI_PLANKS);
@@ -70,6 +72,8 @@ public class ModItemGroup {
                     entries.add(ModItems.LUCI_SIGN);
                     entries.add(ModItems.LUCI_HANGING_SIGN);
                     entries.add(ModBlocks.BLOSSOMING_LUCI_VINE);
+                    entries.add(ModItems.LUCI_BOAT);
+                    entries.add(ModItems.LUCI_CHEST_BOAT);
 
                     // Music Discs
                     entries.add(ModItems.NIGHT_TIME_MUSIC_DISC);
@@ -79,6 +83,8 @@ public class ModItemGroup {
 
                     entries.add(ModItems.CRAB_SPAWN_EGG);
                     entries.add(ModItems.TURTLE_SPAWN_EGG);
+                    entries.add(ModItems.BUTTERFLY_SPAWN_EGG);
+                    entries.add(ModItems.CATERPILLAR_SPAWN_EGG);
                   }).build());
 
   public static void registerItemGroups() {

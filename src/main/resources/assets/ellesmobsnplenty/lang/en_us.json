@@ -29,6 +29,7 @@
   "block.ellesmobsnplenty.luci_fungus_shelf_block": "Luci Fungus",
 
   "block.ellesmobsnplenty.luci_planks": "Luci Planks",
+  "block.ellesmobsnplenty.chrysalis_block": "Chrysalis",
   "block.ellesmobsnplenty.luci_stairs": "Luci Stairs",
   "block.ellesmobsnplenty.luci_slabs": "Luci Slab",
   "block.ellesmobsnplenty.luci_button": "Luci Button",
@@ -53,6 +54,8 @@
   "block.ellesmobsnplenty.blossoming_luci_vine": "Blossoming Luci Vine",
   "block.ellesmobsnplenty.blossoming_luci_vine_plant": "Blossoming Luci Vine Plant",
   "block.ellesmobsnplenty.luci_petals": "Luci Petals",
+  "item.ellesmobsnplenty.luci_boat": "Luci Boat",
+  "item.ellesmobsnplenty.luci_chest_boat": "Luci Chest Boat",
 
   "entity.ellesmobsnplenty.firefly": "Firefly",
   "item.ellesmobsnplenty.firefly_spawn_egg": "Firefly Spawn Egg",
@@ -63,6 +66,8 @@
   "item.ellesmobsnplenty.crab_claw": "Crab Claw",
 
   "item.ellesmobsnplenty.turtle_spawn_egg": "Turtle Spawn Egg",
+  "item.ellesmobsnplenty.butterfly_spawn_egg": "Butterfly Spawn Egg",
+  "item.ellesmobsnplenty.caterpillar_spawn_egg": "Caterpillar Spawn Egg",
 
   "block.ellesmobsnplenty.lucille_tulip": "Lucille Tulip",
 

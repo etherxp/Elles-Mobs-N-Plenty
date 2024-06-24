@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.findsnow.ellesmobsnplenty.block.ModBlocks;
 import net.findsnow.ellesmobsnplenty.entity.ModEntities;
+import net.findsnow.ellesmobsnplenty.entity.custom.feature.ButterflyEntity;
+import net.findsnow.ellesmobsnplenty.entity.custom.feature.CaterpillarEntity;
 import net.findsnow.ellesmobsnplenty.entity.custom.feature.CrabEntity;
 import net.findsnow.ellesmobsnplenty.entity.custom.feature.TurtleEntity;
 
@@ -23,6 +25,8 @@ public class ModRegistries {
   private static void registerAttributes() {
     FabricDefaultAttributeRegistry.register(ModEntities.CRAB, CrabEntity.createCrabAttributes());
     FabricDefaultAttributeRegistry.register(ModEntities.TURTLE, TurtleEntity.createTurtleAttributes());
+    FabricDefaultAttributeRegistry.register(ModEntities.BUTTERFLY, ButterflyEntity.createButterflyAttributes());
+    FabricDefaultAttributeRegistry.register(ModEntities.CATERPILLAR, CaterpillarEntity.createCaterpillarAttributes());
   }
 
   private static void registerStrippable() {

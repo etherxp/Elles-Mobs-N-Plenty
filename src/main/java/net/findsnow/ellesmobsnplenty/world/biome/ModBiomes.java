@@ -1,19 +1,23 @@
 package net.findsnow.ellesmobsnplenty.world.biome;
 
 import net.findsnow.ellesmobsnplenty.EllesMobsNPlenty;
+import net.findsnow.ellesmobsnplenty.entity.ModEntities;
+import net.findsnow.ellesmobsnplenty.particle.ModParticles;
 import net.findsnow.ellesmobsnplenty.world.ModPlacedFeatures;
 import net.minecraft.client.sound.MusicType;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeEffects;
-import net.minecraft.world.biome.GenerationSettings;
-import net.minecraft.world.biome.SpawnSettings;
+import net.minecraft.util.math.Direction;
+import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
+import net.minecraft.world.gen.feature.Feature;
 
 public class ModBiomes {
   public static final RegistryKey<Biome> LUCI_REGION_1 = register("luci_forest");
@@ -39,8 +43,9 @@ public class ModBiomes {
 
     // Mobs
     SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+    spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BUTTERFLY, 7, 5, 10));
 
-    DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
+    // DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
     DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 
     // Biome Features
@@ -50,10 +55,11 @@ public class ModBiomes {
 
     globalOverworldGeneration(biomeBuilder);
     DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-    DefaultBiomeFeatures.addExtraDefaultFlowers(biomeBuilder);
+    //DefaultBiomeFeatures.addExtraDefaultFlowers(biomeBuilder);
     DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
     DefaultBiomeFeatures.addForestGrass(biomeBuilder);
     DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+    DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
     DefaultBiomeFeatures.addGrassAndClayDisks(biomeBuilder);
     DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
@@ -67,8 +73,8 @@ public class ModBiomes {
                     .waterColor(0x2e6ce8)
                     .waterFogColor(0x618ee8)
                     .skyColor(0x87ceeb)
-                    .grassColor(0x689e41)
-                    .foliageColor(0x689e41)
+                    .grassColor(0x316033)
+                    .foliageColor(0x56944e)
                     .fogColor(0x9ABD95)
                     .moodSound(BiomeMoodSound.CAVE)
                     .music(MusicType.GAME)

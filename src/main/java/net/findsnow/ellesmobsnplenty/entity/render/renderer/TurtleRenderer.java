@@ -27,7 +27,7 @@ public class TurtleRenderer extends MobEntityRenderer<TurtleEntity, TurtleModel<
 
   @Override
   public void render(TurtleEntity livingEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
-    if(livingEntity.isBaby()) {
+    if (livingEntity.isBaby()) {
       matrixStack.scale(0.5f, 0.5f, 0.5f);
     } else {
       matrixStack.scale(1.0f, 1.0f, 1.0f);

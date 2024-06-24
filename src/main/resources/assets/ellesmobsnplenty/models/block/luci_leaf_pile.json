@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "ellesmobsnplenty:block/luci_leaf_pile",
+		"particle": "ellesmobsnplenty:block/luci_leaf_pile"
+	},
+	"elements": [
+		{
+			"from": [0, 0.25, 0],
+			"to": [16, 0.25, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.75, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 8, 8.5], "texture": "#3"},
+				"east": {"uv": [8, 0, 16, 0.5], "texture": "#3"},
+				"south": {"uv": [0, 8, 8, 8.5], "texture": "#3"},
+				"west": {"uv": [8, 0, 16, 0.5], "texture": "#3"},
+				"up": {"uv": [8, 8, 0, 0], "texture": "#3"},
+				"down": {"uv": [8, 0, 0, 8], "texture": "#3"}
+			}
+		}
+	]
+}
